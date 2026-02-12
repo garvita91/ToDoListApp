@@ -1,43 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:background="#F9F9F9"
-    android:padding="16dp"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <TextView
-        android:text="📝 My To-Do List"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="#2E7D32"
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp" />
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="📝 My To-Do List"
+        android:textColor="#2E7D32"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editTextTask"
-        android:hint="Enter new task"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:background="@drawable/edit_text_bg"
-        android:padding="10dp"
-        android:layout_marginTop="10dp" />
+        android:hint="Enter new task"
+        android:padding="10dp" />
 
     <Button
         android:id="@+id/btnAdd"
-        android:text="Add Task"
-        android:textAllCaps="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:backgroundTint="#4CAF50"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="10dp" />
+        android:text="Add Task"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF" />
 
     <ListView
         android:id="@+id/listViewTasks"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:dividerHeight="8dp"/>
+
 </LinearLayout>

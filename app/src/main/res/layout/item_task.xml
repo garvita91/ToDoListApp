@@ -8,12 +8,16 @@
     android:layout_height="wrap_content"
     android:background="#FFFFFF"
     android:elevation="2dp"
+    android:descendantFocusability="blocksDescendants"
     android:layout_marginBottom="6dp">
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
 
     <TextView
         android:id="@+id/taskText"
@@ -25,9 +29,18 @@
         android:layout_height="wrap_content" />
 
     <ImageView
+        android:id="@+id/editIcon"
+        android:src="@android:drawable/ic_menu_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        app:tint="#4CAF50"/>
+
+    <ImageView
         android:id="@+id/deleteIcon"
         android:src="@android:drawable/ic_menu_delete"
-        app:tint="#F44336"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        app:tint="#F44336"/>
+
 </LinearLayout>
